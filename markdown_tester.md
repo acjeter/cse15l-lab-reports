@@ -27,8 +27,8 @@ class RandomTest {
   int basicY;
   
   RandomTest(int basicX, int basicY) {
-    int basicX = this.basicX;
-    int basicY = this.basicY;
+    this.basicX = basicX;
+    this.basicY = basicY;
   }
 }
 ```
