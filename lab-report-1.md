@@ -48,3 +48,4 @@ Now that you have successfully connected to `ieng6`, it's time to try entering s
 
 For starters, what is a command? A command is a line of code that is entered into the terminal that runs an operation. For example, if we want the server to list the current working directory, we can type `pwd` into the terminal, and the terminal should output:
 
+test
