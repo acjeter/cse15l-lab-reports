@@ -21,7 +21,7 @@ Q: What is `ssh`?
 Installing VSCode is pretty straightforward. 
 
 1. You will need to go to the Visual Studio Code website [https://code.visualstudio.com](https://code.visualstudio.com) and follow the instructions specific to your operating system (macOS, Linux, or Windows).
-2. After you've installed VSCode, open a new window that looks like this below. Mine is themed to look light, but yours might have any other combination of colors, which might depend on your operating system. ![Image](VScode-blank.png)
+2. After you've installed VSCode, open a new window that looks like this below. Mine is themed to look light lilac, but yours might have any other combination of colors, which might depend on your operating system. ![Image](VScode-blank.png)
 
 ## Step 2: Remotely Connecting
 Before we remotely connect to `ieng6`, you'll need to make sure you have your course-specific username and password to be able to use `ssh` to remotely connect to `ieng6`.
@@ -46,6 +46,5 @@ Congratulations! You've successfully connected to an `ieng6` server in the CSE b
 ## Step 3: Running Commands
 Now that you have successfully connected to `ieng6`, it's time to try entering some commands! This will be fun :)
 
-For starters, what is a command? A command is a line of code that is entered into the terminal that runs an operation. For example, if we want the server to list the current working directory, we can type `pwd` into the terminal, and the terminal should output:
-
-test
+For starters, what is a command? A command is a line of code that is entered into the terminal that runs an operation. For example, if we want the server to list the current working directory, we can type `pwd` into the terminal, and the terminal should output: ![Image](VScode-pwd-ieng6-output.png)
+This command prints the current working directory of -bash. Bash stands for 'Bourne again shell', and for our purposes we're using -bash to enter commands.
