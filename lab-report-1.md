@@ -36,6 +36,8 @@ When you have the terminal open, you will initiate the `ssh` connection by enter
 ````
 $ ssh cs15lsp23__@ieng6.ucsd.edu
 ````
+For me, there was an issue with the `ieng6` server, and I had to manually add `-202` here, and it looked like this: `cs15lsp23__@ieng6-202.ucsd.edu`. Basically all this did was force a connection between computer 202, because the other computers had issues with certain accounts (mine included).
+
 If this is the first time that you are connecting to this server, a message might pop up. Here is a screenshot of what it might look like: ![Image](VScode-host-authenticity.png)
 This is **expected**! Don't worry. What is happening here is that your computer client is trying to make sure that you're connecting to the right server. Enter `yes` in the terminal.
 
@@ -54,9 +56,8 @@ Some other useful commands are `cd`, `ls`, `mkdir`, and `cp`.
 - `ls` means list files. If you type `ls` in as a command, it will list all the files in the current directory. However, other things happen if you add `-lat` or `-a` at the end. Try these out in your terminal and see what the outputs are!
 - `mkdir` means make directory. This command allows you to create new directories, which might be useful when you want to add new files into a directory that isn't yet established. Try typing it in with a new directory to create!
 - `cp` means copy (a file). You can use `cp` to copy a file into a directory. Try `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/`
-- `cat` means concatenate. You can use `cat` to combine and open files.
+- `cat` means concatenate. You can use `cat` to combine and/or open files.
 
-Here is what the output was for me when I tried a few of these commands!
+Here is what the output was for me when I tried a few of these commands! ![Image](VScode-trying-commands.png)
 
-With this brief outline of some useful commands, try exploring `ieng6` on your own by entering more commands yourself!
-See! I knew you could do it! 
+With this brief outline of some useful commands, try exploring `ieng6` on your own by entering more commands yourself! Congratulations on making it to the end, and happy coding!
