@@ -47,4 +47,16 @@ Congratulations! You've successfully connected to an `ieng6` server in the CSE b
 Now that you have successfully connected to `ieng6`, it's time to try entering some commands! This will be fun :)
 
 For starters, what is a command? A command is a line of code that is entered into the terminal that runs an operation. For example, if we want the server to list the current working directory, we can type `pwd` into the terminal, and the terminal should output: ![Image](VScode-pwd-ieng6-output.png)
-This command prints the current working directory of -bash. Bash stands for 'Bourne again shell', and for our purposes we're using -bash to enter commands.
+This command prints the current working directory, and in this case, the current working directory is `/home/linux/ieng6/cs15lsp23/cs15lsp23rq`.
+
+Some other useful commands are `cd`, `ls`, `mkdir`, and `cp`.
+- `cd` means change directory. You can use `cd` to change the current working directory by typing `$ cd _` where you replace _ with the path you'd like to change the current working directory to. Try typing in `cd ~`.
+- `ls` means list files. If you type `ls` in as a command, it will list all the files in the current directory. However, other things happen if you add `-lat` or `-a` at the end. Try these out in your terminal and see what the outputs are!
+- `mkdir` means make directory. This command allows you to create new directories, which might be useful when you want to add new files into a directory that isn't yet established. Try typing it in with a new directory to create!
+- `cp` means copy (a file). You can use `cp` to copy a file into a directory. Try `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/`
+- `cat` means concatenate. You can use `cat` to combine and open files.
+
+Here is what the output was for me when I tried a few of these commands!
+
+With this brief outline of some useful commands, try exploring `ieng6` on your own by entering more commands yourself!
+See! I knew you could do it! 
