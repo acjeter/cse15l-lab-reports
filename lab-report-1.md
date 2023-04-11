@@ -34,7 +34,7 @@ When you have the terminal open, you will initiate the `ssh` connection by enter
 $ ssh cs15lsp23__@ieng6.ucsd.edu
 ````
 
-If this is the first time that you are connecting to this server, the below message might pop up. Here is a screenshot of what it might look like: ![Image](VScode-host-authenticity.png)
+If this is the first time that you are connecting to this server, a message might pop up. Here is a screenshot of what it might look like: ![Image](VScode-host-authenticity.png)
 This is **expected**! Don't worry. What is happening here is that your computer client is trying to make sure that you're connecting to the right server. Enter `yes` in the terminal.
 
 Next, you should be prompted to enter your password. When entering your password, your computer **will not** show the characters as you enter them, this is **expected**! Don't worry. Just enter your password, and then you should see an output like this from the `ieng6` server:
