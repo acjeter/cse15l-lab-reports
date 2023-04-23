@@ -9,9 +9,9 @@ class Handler implements URLHandler {
         if (url.getPath().equals("/")) {
             return String.format(runningString);
         }
-        else if (url.getPath().equals("/add-message?s=")) {
+        else if (url.getPath().contains("/add-message?s=")) {
             String[] urlStrings = url.getQuery().split("=");
-            runningString.join(urlStrings[1] + "\n");
+            runningString.join("\n" + urlStrings[1]);
             System.out.println(runningString);
             return String.format(runningString);
         }
