@@ -3,22 +3,22 @@ import java.net.URI;
 // import java.util.ArrayList;
 
 class Handler implements URLHandler {
-    String runningString = "";
+    List<String> lines;
+    String path;
     
-    public String handleRequest(URI url) {
+    public String handleRequest(URI url) throws IOException {
+        String query = url.getQuery();
         if (url.getPath().equals("/")) {
             return String.format(runningString);
         }
         else if (url.getPath().equals("/add-message")) {
-            if (url.getQuery().contains("s=")) {
-                String[] urlStrings = url.getQuery().split("=");
-                String temp = urlStrings[1] + "\n";
-                runningString = runningString + temp;
-                System.out.println("p" + runningString);
-                return String.format(runningString);
+            if (query.startsWith("s=")) {
+                String current = query.split("=")[1];
+                this.lines.add(current);
+                return String.format(lines);
             }
             else {
-                return "Error 404 Not Found!";
+                return "Add message requires query parameter s\n";
             }
         }
         else {
