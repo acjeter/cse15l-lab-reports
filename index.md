@@ -1,5 +1,3 @@
-# CSE 15L | Lab Reports
-
 ## Andrew Jeter | CSE 15L Politz, J.
 
 Hello! Welcome to the main page of my CSE15L website. Below are some links to my lab reports:
