@@ -1,7 +1,12 @@
-# Lab Report 1 | Servers and Bugs
+# Lab Report 2 | Servers and Bugs
 ## Andrew Jeter | April 22, 2023 | CSE 15L Politz, J.
 
-Welcome back CSE15L students! I know what it has been only a few weeks since the last post, but I am excited for what we will be talking about today! We will be writing a web server called `StringServer` that supports the specified path and behavior that I will describe below. The web server that we develop will be able to keep tract of a string that gets added to by incoming url requests. The specific request that the web server will handle is:
+Welcome back CSE15L students! I know what it has been only a few weeks since the last post, but I am excited for what we will be talking about today! I'm confident that if you did well during the first tutorial you'll do even better on this one! We will be writing a web server called `StringServer` that supports the specified path and behavior that I will describe below. The web server that we develop will be able to keep track of a string that gets added to by incoming url requests.
+
+![image](https://github.com/acjeter/cse15l-lab-reports/assets/119645659/4a20ab05-64b8-47ea-82f2-af4048c1233a)
+
+
+The specific request that the web server will handle is:
 
 `/add-message?s=<string>`
 
@@ -9,7 +14,7 @@ This url request will concatenate a new line (`\n`) and the string given after t
 
 For example, after
 
-`add/message?=Hi!`
+`/add-message?=Hi!`
 
 The page should display
 
@@ -29,4 +34,4 @@ When writing this web server, it is important to note the criterion of the write
 
 <img width="541" alt="Screenshot 2023-05-09 at 12 49 58 PM" src="https://github.com/acjeter/cse15l-lab-reports/assets/119645659/fbfe48f4-3ed4-4f4f-af21-25426258e5db">
 
-When using the 
+When using the `/add-message?s=<string>` url request, 
