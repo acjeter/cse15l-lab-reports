@@ -1,29 +1,27 @@
 import java.io.IOException;
 import java.net.URI;
-// import java.util.ArrayList;
+import java.util.ArrayList;
+
+//localhost:4050/add-message?s=Hello
 
 class Handler implements URLHandler {
-    List<String> lines;
-    String path;
+    String runningString = "";
     
-    public String handleRequest(URI url) throws IOException {
+    public String handleRequest(URI url) {
         String query = url.getQuery();
         if (url.getPath().equals("/")) {
             return String.format(runningString);
         }
         else if (url.getPath().equals("/add-message")) {
-            if (query.startsWith("s=")) {
-                String current = query.split("=")[1];
-                this.lines.add(current);
-                return String.format(lines);
-            }
-            else {
-                return "Add message requires query parameter s\n";
-            }
-        }
-        else {
-            return "Error 404 Not Found!";
-        }
+            if (query.contains("s=")) {
+                String[] urlStrings = query.split("=");
+                if (urlStrings[0].equals("s")) {
+                    runningString = runningString + urlStrings[1] + "\n";
+                    return String.format(runningString);
+                }  
+            } 
+        } 
+        return "Error 404 Not Found!";
     }
 }
 
