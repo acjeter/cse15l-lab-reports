@@ -32,8 +32,8 @@ the page should show
 
 When writing this web server, it is important to note the criterion of the writeup. Here, you will need to create `runningString`, a passive variable of type `String` that will be added to. This is because the web server needs to be able to handle multiple requests, and they are to be concatenated together on new lines for each string given through a new request. The implemented code for `StringServer` will look like this.
 
-<img width="541" alt="Screenshot 2023-05-09 at 12 49 58 PM" src="https://github.com/acjeter/cse15l-lab-reports/assets/119645659/fbfe48f4-3ed4-4f4f-af21-25426258e5db">
+![image](StringServer-Code.png)
 
 When using the `/add-message?s=<string>` url request, here is what the web server should do:
 
-![image](https://
+![image](StrServ1.png)
