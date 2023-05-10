@@ -44,5 +44,6 @@ In this screenshot, handleRequest is called to actually *do* something with the 
 3. `String runningString = "Hello + \n"`
 4. `String query = s=Hello`
 5. `String[] urlStrings = {s=, Hello}`
+
 Originally, the value of port is null, the value of runningString is an empty string, the value of query is an empty string, and the value of urlStrings is an empty string. The changes of the relevant fields of the class are made when you input the one string in the query of the `/add-message?s=<string>` request.
 
