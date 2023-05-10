@@ -5,6 +5,7 @@ Welcome back CSE15L students! I know what it has been only a few weeks since the
 
 ![image](https://github.com/acjeter/cse15l-lab-reports/assets/119645659/4a20ab05-64b8-47ea-82f2-af4048c1233a)
 
+## Part 1: StringServer
 
 The specific request that the web server will handle is:
 
@@ -45,7 +46,7 @@ In this screenshot, handleRequest is called to actually *do* something with the 
 For this screenshot:
 
 1. `int port = 4092`
-2. `String URI = http://localhost:`
+2. `URI url = http://localhost:4092/add-message?s=Hello`
 3. `String runningString = "Hello + \n"`
 4. `String query = s=Hello`
 5. `String[] urlStrings = {s=, Hello}`
@@ -59,4 +60,17 @@ When using the `/add-message?s=How are you?` url request, here is what the web s
 
 ![image](StrServ3.png)
 
-In this screenshot, handleRequest is again to _handle_ the request. This url request 
+In this screenshot, handleRequest is again to _handle_ the request. This url request has `path` `/add-message` and `query` `?s=How are you?`. This means that runningString will need to be updated, along with other values for the fields mentioned below.
+
+1. Port remains the same since there is not a new server being started. `int port = 4092`
+2. `URI url = http://localhost:4092/add-message?s=How are you?`
+3. `String runningString = "Hello + \n + How are you? + \n"`
+4. `String query = s=How are you?`
+5. `String[] urlStrings = {s=, Hello}`
+
+
+Before this request the values of the fields above were as I stated in the outline of the previous screenshot.
+
+## Part 2: Bugs
+
+## Part 3: New Skills
