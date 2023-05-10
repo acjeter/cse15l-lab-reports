@@ -34,11 +34,15 @@ When writing this web server, it is important to note the criterion of the write
 
 ![image](StringServer-Code.png)
 
-When using the `/add-message?s=<string>` url request, here is what the web server should do:
+***
+
+When using the `/add-message?s=Hello` url request, here is what the web server should do:
 
 ![image](StrServ2.png)
 
-In this screenshot, handleRequest is called to actually *do* something with the url inputted. This depends on the path inputted, and depending on this, the query inputted. For this screenshot, `Hello` is part of the query after the `?s=`. The relevent fields include `runningString`, `port`, `URI`, `urlStrings`, and `query. For this screenshot:
+In this screenshot, handleRequest is called to actually *do* something with the url inputted. This depends on the path inputted, and depending on this, the query inputted. For this screenshot, `Hello` is part of the query after the `?s=`. The relevent fields include `runningString`, `port`, `URI`, `urlStrings`, and `query. 
+
+For this screenshot:
 
 1. `int port = 4092`
 2. `String URI = http://localhost:`
@@ -49,3 +53,10 @@ In this screenshot, handleRequest is called to actually *do* something with the 
 
 Originally, the value of port is null, the value of runningString is an empty string, the value of query is an empty string, and the value of urlStrings is an empty string. The changes of the relevant fields of the class are made when you input the one string in the query of the `/add-message?s=<string>` request.
 
+***
+
+When using the `/add-message?s=How are you?` url request, here is what the web server should do:
+
+![image](StrServ3.png)
+
+In this screenshot, handleRequest is again to _handle_ the request. This url request 
