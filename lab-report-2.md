@@ -34,4 +34,6 @@ When writing this web server, it is important to note the criterion of the write
 
 <img width="541" alt="Screenshot 2023-05-09 at 12 49 58 PM" src="https://github.com/acjeter/cse15l-lab-reports/assets/119645659/fbfe48f4-3ed4-4f4f-af21-25426258e5db">
 
-When using the `/add-message?s=<string>` url request, 
+When using the `/add-message?s=<string>` url request, here is what the web server should do:
+
+![image](https://
