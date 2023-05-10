@@ -39,11 +39,13 @@ When using the `/add-message?s=<string>` url request, here is what the web serve
 ![image](StrServ2.png)
 
 In this screenshot, handleRequest is called to actually *do* something with the url inputted. This depends on the path inputted, and depending on this, the query inputted. For this screenshot, `Hello` is part of the query after the `?s=`. The relevent fields include `runningString`, `port`, `URI`, `urlStrings`, and `query. For this screenshot:
+
 1. `int port = 4092`
 2. `String URI = http://localhost:`
 3. `String runningString = "Hello + \n"`
 4. `String query = s=Hello`
 5. `String[] urlStrings = {s=, Hello}`
+
 
 Originally, the value of port is null, the value of runningString is an empty string, the value of query is an empty string, and the value of urlStrings is an empty string. The changes of the relevant fields of the class are made when you input the one string in the query of the `/add-message?s=<string>` request.
 
