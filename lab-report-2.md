@@ -4,6 +4,7 @@
 Welcome back CSE15L students! I know what it has been only a few weeks since the last post, but I am excited for what we will be talking about today! I'm confident that if you did well during the first tutorial you'll do even better on this one! We will be writing a web server called `StringServer` that supports the specified path and behavior that I will describe below. The web server that we develop will be able to keep track of a string that gets added to by incoming url requests.
 
 ![image](https://github.com/acjeter/cse15l-lab-reports/assets/119645659/4a20ab05-64b8-47ea-82f2-af4048c1233a)
+
 *credit: [https://www.yourtango.com/2018320275/30-motivational-quotes-memes-when-you-need-inspiration](https://www.yourtango.com/2018320275/30-motivational-quotes-memes-when-you-need-inspiration)*
 
 ## Part 1: StringServer
