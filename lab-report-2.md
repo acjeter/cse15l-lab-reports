@@ -77,12 +77,10 @@ In this screenshot, `handleRequest` is again called to handle the request. This 
 Before this request the values of the fields above were as I stated in the outline of the previous screenshot.
 
 ## Part 2: Bugs
-Lab 3 had oddly, lots of 🐛's! Through working with my lab group on the bug fixing, I learned that even if some of the most important parts of the code are working, it is **extremely** important to test _all_ of your code thoroughly! Think about the context: you are developing a security system software for a hostpital's medical files. You **have** to make sure that the code has no possible way to break into the personal medical data, otherwise confidential patient information could get spread into the public! This is not only scary, but _illegal_.
-
-Therefore, I will walkthrough information for one of the bugs from Lab 3 here. 
+Lab 3 had oddly, lots of 🐛s! Through working with my lab group on the bug fixing, I learned that even if some of the most important parts of the code are working, it is **extremely** important to test _all_ of your code thoroughly! Think about the context: you are developing a security system software for a hostpital's medical files. You **have** to make sure that the code has no possible way to break into the personal medical data, otherwise confidential patient information could get spread into the public! This is not only scary, but _illegal_. I will walkthrough information for one of the bugs we resolved from Lab 3 here. 
 
 This bug is inside of th
 
 
 ## Part 3: New Skills
-Personally, I feel that during Lab 3 I gained a 
+During lab 2 I learned TONS of significant information about Git commands and GitHub! My favorite part of the lab was experimenting with cloning with Github Desktop, and learning how to leverage that tool for use during programming projects. We also learned in the lab how to start a server, and how to start a server remotely. To access the server, we learned about running requests through a local browser, or on the remote `ieng6` computer through `ssh`. Alternatively, you can also access URLs through the Command Line with the `curl` command, but I personally prefer running the requests through the browser route.
