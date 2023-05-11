@@ -79,3 +79,4 @@ Before this request the values of the fields above were as I stated in the outli
 ## Part 2: Bugs
 
 ## Part 3: New Skills
+Personally, I feel that during Lab 3 I gained a
