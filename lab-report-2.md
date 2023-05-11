@@ -37,6 +37,11 @@ When writing this web server, it is important to note the criterion of the write
 
 ***
 
+**IMPORTANT**
+Something that I `painfully` discovered while working on this lab report for two weeks, I was having duplication issues on the web server on `Safari`. I came to realize that I was having issues _because_ I was using `Safari`. I guess it was random, but I'm not really sure. All I know is that it **works on `Chrome`**. So for the purposes of my writing below, I was using the Google Chrome browser.
+
+***
+
 When using the `/add-message?s=Hello` url request, here is what the web server should do:
 
 ![image](StrServ2.png)
