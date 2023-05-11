@@ -47,6 +47,17 @@ When using the `/add-message?s=Hello` url request, here is what the web server s
 
 ![image](StrServ2.png)
 
+### Methods Called (In code line order):
+
+- `handleRequest(URI url)`: takes in the `URI url` parameter when the server is given a url request, where the path and query are located.
+- `url.getQuery()`: retrieves the query from, in this case, the url. The query is the part of the url after the `?`.
+- `url.getPath().equals("/")`: in this case, checks to see if the url path (from `url.getPath()`) equals the root (`/`).
+-  `String.format(runningString)`: `.format()` returns the formatted string. In this case, I didn't add any formats, so it just returns `runningString` as is.
+-  `query.contains("s=")`: checks to see if `this` string contains the given set of characters. In this case, checking if the url query contains `"s="`, which is the part of the query which signals that the string intended to be added to `runningString` is there.
+-  `query.split("=")`: splits `this` string at the given character. In this case, splits the url query at `"="`, so the characters after the "=" can be added to `runningString` with a new line (`\n`).
+- `Integer.parseInt(args[0])`: this method is used to take the given integer from the terminal entry when using `java StringServer <port>` to create the new server with the given port number.
+- `Server.start(port, new Handler()`: this method is used to start the server using the given port number, and creates a new Handler class object for the server.
+
 In this screenshot, `handleRequest` is called to actually *do* something with the url inputted. This depends on the path inputted, and depending on this, the `query` inputted. For this screenshot, `Hello` is part of the query after the `?s=`. The relevent fields include `runningString`, `port`, `URI`, `urlStrings`, and `query`. 
 
 For this screenshot:
@@ -65,6 +76,18 @@ Originally, the value of port is null, the value of `runningString` is an empty 
 When using the `/add-message?s=How are you?` url request, here is what the web server should do:
 
 ![image](StrServ3.png)
+
+### Methods Called (In code line order):
+_No methods have changed_
+
+-  `handleRequest(URI url)`: takes in the `URI url` parameter when the server is given a url request, where the path and query are located.
+-  `url.getQuery()`: retrieves the query from, in this case, the url. The query is the part of the url after the `?`.
+-  `url.getPath().equals("/")`: in this case, checks to see if the url path (from `url.getPath()`) equals the root (`/`).
+-  `String.format(runningString)`: `.format()` returns the formatted string. In this case, I didn't add any formats, so it just returns `runningString` as is.
+-  `query.contains("s=")`: checks to see if `this` string contains the given set of characters. In this case, checking if the url query contains `"s="`, which is the part of the query which signals that the string intended to be added to `runningString` is there.
+-  `query.split("=")`: splits `this` string at the given character. In this case, splits the url query at `"="`, so the characters after the "=" can be added to `runningString` with a new line (`\n`).
+-  `Integer.parseInt(args[0])`: this method is used to take the given integer from the terminal entry when using `java StringServer <port>` to create the new server with the given port number.
+-  `Server.start(port, new Handler()`: this method is used to start the server using the given port number, and creates a new Handler class object for the server.
 
 In this screenshot, `handleRequest` is again called to handle the request. This url request has `path /add-message` and `query ?s=How are you?`. This means that runningString will need to be updated, along with other values for the fields mentioned below.
 
