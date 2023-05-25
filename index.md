@@ -10,7 +10,13 @@ Hello! Welcome to the main page of my CSE15L website. Below are some links to my
 **Blog Post:** [Lab Report 2](https://acjeter.github.io/cse15l-lab-reports/lab-report-2)
 
 ### Lab Report 3 | Researching Commands
+**Blog Post** [Lab Report 3](https://acjeter.github.io/cse15l-lab-reports/lab-report-3)
+
+### Lab Report 4 | Vim
 **Blog Post** *In Progress*
+
+### Lab Report 5
+*To Be Released*
 
 ***
 
