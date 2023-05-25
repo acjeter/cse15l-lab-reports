@@ -3,7 +3,9 @@
 
 ## The `Grep` Command
 Hello and welcome back to another post! I am excited to talk about the `grep` command today, and give you some interesting command-line options for the `grep` command! After learning about the `grep` command and some interesting command-line options for it, I'm confident you all will have an extremely easy time using the command, and will find them very useful! You can do it!
+
 ***
+
 ![image](https://github.com/acjeter/cse15l-lab-reports/assets/119645659/bbe399a7-d3dd-49a4-95ea-11ac8a8da7df)
 
 credit: [https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F17521886038545880%2F&psig=AOvVaw3I-Ki-JuDI9hBcYvo6UpFv&ust=1685081879254000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCNCr0ajpj_8CFQAAAAAdAAAAABAS](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F17521886038545880%2F&psig=AOvVaw3I-Ki-JuDI9hBcYvo6UpFv&ust=1685081879254000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCNCr0ajpj_8CFQAAAAAdAAAAABAS)
