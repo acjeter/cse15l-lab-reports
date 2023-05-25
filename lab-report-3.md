@@ -8,10 +8,11 @@ Hello and welcome back to another post! I am excited to talk about the `grep` co
 
 credit: [https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F17521886038545880%2F&psig=AOvVaw3I-Ki-JuDI9hBcYvo6UpFv&ust=1685081879254000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCNCr0ajpj_8CFQAAAAAdAAAAABAS](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F17521886038545880%2F&psig=AOvVaw3I-Ki-JuDI9hBcYvo6UpFv&ust=1685081879254000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCNCr0ajpj_8CFQAAAAAdAAAAABAS)
 ***
-For the purposes of this post, we're going to outline four interesting options for the `grep` command. So that I did, and like a curious student, I asked OpenAI's ChatGPT "What are four interesting command-line options or alternate ways to use the bash find command?" and the response listed details about the `-r`, `-v`, `-w`, and using regular expressions to search for lines in files.
+For the purposes of this post, we're going to outline four interesting options for the `grep` command. So that I did, and like a curious student, I asked OpenAI's ChatGPT "What are four interesting command-line options or alternate ways to use the bash find command?" and the response listed details about the `-r`, `-v`, `-w`, and `-n` `grep` options.
 
 ### The `grep -r` Command-Line Modifier | Directory Recursive Search
-According to ChatGPT, "the `-r` or `--recursive` option allows `grep` to perform a recursive search through directories. This is useful when you want to search for a pattern in multiple files within a directory hierarchy. For example, to search for the word "example" in all files within a directory and its subdirectories, you can use the following command:"
+According to ChatGPT's response to the question that I asked above: 
+> the `-r` or `--recursive` option allows `grep` to perform a recursive search through directories. This is useful when you want to search for a pattern in multiple files within a directory hierarchy. For example, to search for the word "example" in all files within a directory and its subdirectories, you can use the following command:
 ```
 grep -r "example" /path/to/directory
 ```
@@ -53,8 +54,9 @@ technical/biomed//1471-2407-3-16.txt:        biological response to radiation in
 
 Overall, the `grep` `-r` command-line option is extremely useful for finding and listing specific patterns in directories and their subdirectories. Here, the command searches for the pattern in all files within the directory path that I specified, which was simply technical/ for the first command, and more restrictively technical/biomed/ for the second command.
 
-### The `grep -v` Command-Line Modifier.
-According to ChatGPT's response to my question in the introduction, another command-line modifier is `-v`. "The `-v` or `--invert-match` option inverts the match, i.e., it selects lines that **do not** match the specified pattern. This is useful when you want to find lines that do not contain a certain pattern. For example, to find all lines in a file that do not contain the word "example," you can use the following command:"
+### The `grep -v` Command-Line Modifier | Find Everything But This
+According to ChatGPT's response to my question in the introduction, another command-line modifier is `-v`. 
+> The `-v` or `--invert-match` option inverts the match, i.e., it selects lines that **do not** match the specified pattern. This is useful when you want to find lines that do not contain a certain pattern. For example, to find all lines in a file that do not contain the word "example," you can use the following command:
 ```
 grep -v "example" file.txt
 ```
@@ -180,8 +182,9 @@ grep -v "," technical/plos/journal.pbio.0020067.txt
 
 Essentially, this `grep` command-line tool `-v` just goes in a file and finds and returns all lines that **do not contain** the given pattern for these examples I used "a" for the first pattern, and "," for the second, to first find all lines that didn't contain the letter "a", and then for the second file, to find all lines that didn't contain a comma ",".
 
-### The `grep -w` Command-Line Modifier | 
-According to the question that I asked ChatGPT in the introduction; "The `-w` or `--word-regexp` option allows `grep` to match only whole words, rather than partial matches. This is useful when you want to search for a specific word and avoid matching substrings. For example, to search for the word "example" as a whole word in a file, you can use the following command:"
+### The `grep -w` Command-Line Modifier | Search for Whole Words
+According to the question that I asked ChatGPT in the introduction: 
+> The `-w` or `--word-regexp` option allows `grep` to match only whole words, rather than partial matches. This is useful when you want to search for a specific word and avoid matching substrings. For example, to search for the word "example" as a whole word in a file, you can use the following command:
 ```
 grep -w "example" file.txt
 ```
@@ -235,4 +238,125 @@ years. The additional revenue generated by the fee hike will allow
 
 Now, for the `-w` command, it is important to note that the command **will not** return lines that have extra text attached, it **only** returns lines that contain words that match the pattern exactly. For example, in the second example even though the pattern was "fee", no lines with the word "fees" were returned, because it is only looking for the word "fee". This tool is particularly useful to find and return lines that contain specific words, with a real-life application being finding specific names in an account database, for example.
 
-### The `
+### The `grep -n` Command-Line Modifier | Displaying Line Numbers
+According to ChatGPT's response to the question that I asked in the introduction: 
+> The `-n` or `--line-number` option displays line numbers along with the matching lines. This is useful when you want to know the line numbers of the matched lines within a file. For example, to search for the word "example" in a file and display the line numbers, you can use the following command:
+```
+grep -n "example" file.txt
+```
+
+Here are some examples using the `./technical` directory.
+
+**Command-Line Input:**
+```
+grep -w -n "fee" technical/government/Media/Annual_Fee.txt
+```
+**Output:**
+```  
+12:order, the base annual fee for active lawyers rises to $229 as of
+13:Jan. 1. Last year, the high court raised that fee to $180 from
+33:The fee increase is expected to generate $2.4 million for the
+47:action raising the fee "is lifesaving for our grantees," Schmitt
+60:The fee increase is "an important step that will give lawyers
+73:Court regarding the fee increase had broad support from bar
+76:years. The additional revenue generated by the fee hike will allow
+```
+
+As you can see, here I used multiple modifiers at the same time. `-w` to find all the lines with the word 'fee' and `-n` to show the line numbers of those lines.
+
+Here's another example:
+
+**Command-Line Input:**
+```
+grep -w -n "in" technical/government/Media/Annual_Fee.txt
+```
+**Output:**
+```
+14:$140. Lawyers in their first three years of practice or who are
+18:organizations that assist low- income residents in civil matters.
+24:and to increase public confidence in the administration of justice,
+26:"These two separate increases in the fees lawyers pay is a step
+27:closer to achieving those two goals," McMorrow said in written
+28:statement. "In times of a downturn in the economy, they demonstrate
+29:a commitment by the full court, and by attorneys in Illinois, to
+32:There are now more than 57,000 active attorneys in Illinois.
+38:money, escrow funds, for instance, and that in turn generates
+41:program. The deposits earned 2.5 percent in interest a year ago and
+52:Assistance Foundation Inc., based in Springfield, and Prairie State
+53:Legal Services, based in Rockford.
+54:"This is a big step the Supreme Court has taken in demonstrating
+55:for all attorneys in the state how important it is that lawyers be
+59:said in a press release.
+65:president, said in the release. More than two years ago, the high
+69:additional resources for such programs in Illinois through
+74:associations across the state," Bertschy said in the release.
+77:LAP to establish offices in central and southern Illinois and
+78:expand its outreach in law schools, according to Murphy. She added
+```
+
+As you can see, the `-n` command is a very useful command to be able to find the line number of the lines that are found by other commands. For example, if you are looking for a specific place in the file with a specific pattern, you can use `grep -w -n <pattern> <file>` to find it!
+
+***
+
+Overall, the `grep` command is an interesting and unique command which can be leveraged to do great things! I told you that you would be able to do it, and I can't wait for the next post!
+
+***
+
+## Sources:
+### OpenAI's ChatGPT:
+
+My initial first question to ChatGPT:
+
+**What I asked:**
+What are four interesting command-line options or alternate ways to use the grep command?
+
+**What the response was:**
+Certainly! Here are four interesting command-line options and alternate ways to use the `grep` command:
+
+1. Recursive Search in Directories:
+   The `-r` or `--recursive` option allows `grep` to perform a recursive search through directories. This is useful when you want to search for a pattern in multiple files within a directory hierarchy. For example, to search for the word "example" in all files within a directory and its subdirectories, you can use the following command:
+   ```
+   grep -r "example" /path/to/directory
+   ```
+
+2. Inverting the Match:
+   The `-v` or `--invert-match` option inverts the match, i.e., it selects lines that do not match the specified pattern. This is useful when you want to find lines that do not contain a certain pattern. For example, to find all lines in a file that do not contain the word "example," you can use the following command:
+   ```
+   grep -v "example" file.txt
+   ```
+
+3. Searching for Whole Words:
+   The `-w` or `--word-regexp` option allows `grep` to match only whole words, rather than partial matches. This is useful when you want to search for a specific word and avoid matching substrings. For example, to search for the word "example" as a whole word in a file, you can use the following command:
+   ```
+   grep -w "example" file.txt
+   ```
+
+4. Using Regular Expressions:
+   `grep` supports regular expressions, which allows for more advanced pattern matching. Regular expressions provide powerful search capabilities, such as matching patterns with wildcards, character classes, quantifiers, and more. For example, to search for lines starting with "A" or "B" followed by any three digits in a file, you can use the following command:
+   ```
+   grep "^[AB][0-9]\{3\}" file.txt
+   ```
+
+These are just a few examples of the many powerful options and alternate ways to use the `grep` command. `grep` is a versatile tool for searching and matching patterns within files and is widely used in command-line operations and scripting.
+
+***
+
+I didn't want to use the fourth from above, so I asked it for one more `grep` command.
+
+**What I asked:**
+what is one more
+
+**What the response was:**
+Certainly! Here's one more interesting command-line option for the `grep` command:
+
+1. Displaying Line Numbers:
+   The `-n` or `--line-number` option displays line numbers along with the matching lines. This is useful when you want to know the line numbers of the matched lines within a file. For example, to search for the word "example" in a file and display the line numbers, you can use the following command:
+   ```
+   grep -n "example" file.txt
+   ```
+   This command will output the lines containing the word "example" along with their corresponding line numbers.
+
+This option is helpful when you need to locate specific lines within a file or when you want to reference line numbers in further processing or analysis.
+
+These are some of the interesting command-line options you can use with the `grep` command. `grep` provides a flexible and efficient way to search for patterns and manipulate text based on specific criteria, making it a valuable tool for various command-line tasks and scripting.
+
