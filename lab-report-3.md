@@ -7,7 +7,9 @@ Hello and welcome back to another post! I am excited to talk about the `grep` co
 ![image](https://github.com/acjeter/cse15l-lab-reports/assets/119645659/bbe399a7-d3dd-49a4-95ea-11ac8a8da7df)
 
 credit: [https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F17521886038545880%2F&psig=AOvVaw3I-Ki-JuDI9hBcYvo6UpFv&ust=1685081879254000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCNCr0ajpj_8CFQAAAAAdAAAAABAS](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F17521886038545880%2F&psig=AOvVaw3I-Ki-JuDI9hBcYvo6UpFv&ust=1685081879254000&source=images&cd=vfe&ved=0CBIQjhxqFwoTCNCr0ajpj_8CFQAAAAAdAAAAABAS)
+
 ***
+
 For the purposes of this post, we're going to outline four interesting options for the `grep` command. So that I did, and like a curious student, I asked OpenAI's ChatGPT "What are four interesting command-line options or alternate ways to use the bash find command?" and the response listed details about the `-r`, `-v`, `-w`, and `-n` `grep` options.
 
 ### The `grep -r` Command-Line Modifier | Directory Recursive Search
