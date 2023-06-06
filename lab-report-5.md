@@ -28,6 +28,18 @@ Hello! After a thorough review of your `bug_grade.sh` script, it looks like ther
 
 ### Student Response:
 
-Thank you so much! It seems that fix worked! Here is the output of `bug_grade.sh`. 
+Thank you so much! It seems that fix worked! Here is the output of `bug_grade.sh`. ![Image](https://github.com/acjeter/cse15l-lab-reports/blob/main/LR5-SS3-bug-grade.png)
+
+***
+
+1. The repository with the buggy `grade.sh` file and the correct `grade.sh` file is [https://github.com/acjeter/list-examples-grader](https://github.com/acjeter/list-examples-grader). The files used are `bug_grade.sh` which contains the bug, and `grade.sh` which is the correct file with no bugs. Code is in the screenshots above.
+
+2. `bash bug_grade.sh https://github.com/ucsd-cse15l-f22/list-methods-compile-error` is the symptom-inducing input
+3. `bash bug_grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected` has correct output
+
+
+## Reflection
+I loved my labs! They were absolutely the most fun part of school every week, and I had fun working with my classmates and the amazing tutor Crystal. I loved learning through experience, and my favorite lab was probably the one where we learned about `grep`. I thought it was super cool moving all that data around and putting it all into different files and manipulating the output as well! Overall I loved this class! :)
+
 
 
