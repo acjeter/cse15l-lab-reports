@@ -15,8 +15,8 @@ Hello! Welcome to the main page of my CSE15L website. Below are some links to my
 ### Lab Report 4 | Vim
 **Blog Post** *In Progress*
 
-### Lab Report 5
-*To Be Released*
+### Lab Report 5 | Debugging Scenario
+**EdStem Post** *In Progress*
 
 ***
 
