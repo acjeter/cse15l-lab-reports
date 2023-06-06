@@ -17,3 +17,17 @@ When using this 'student code' implementation, it has no errors, so it is expect
 However, when using the lab files which are expected to cause a compile error, no such compile error is displayed by `bug_grade.sh` in the Terminal, and I'm not sure what's wrong with my code. Can you help me? Here is the buggy output: ![Image](https://github.com/acjeter/cse15l-lab-reports/blob/main/LR5-SS2.5-bug-grade.png)
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
+
+When using the code that is stated to provide a correct compile, pass the file check, and all the JUnit testers, the `bug_grade.sh` script returns with no errors. However, when using the code that is supposed to throw a compile error in `bug_grade.sh`, there is no such compile error.
+
+***
+
+### TA Response:
+
+Hello! After a thorough review of your `bug_grade.sh` script, it looks like there might be an error on line 27, where the script checks for compile errors. The variable should be `$?`, not `$3`. The full line should be `if [[ $? -eq 0 ]]`. Try that and then reply with the output and if it works!
+
+### Student Response:
+
+Thank you so much! It seems that fix worked! Here is the output of `bug_grade.sh`. 
+
+
