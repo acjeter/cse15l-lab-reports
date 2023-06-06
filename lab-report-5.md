@@ -11,9 +11,9 @@ _MacOS, Safari, Visual Studio Code; Code Repository: [https://github.com/acjeter
 
 **Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.**
 
-When using this 'student code' implementation, it has no errors, so it is expected to pass the compile and file check, and it does, with no errors. Here is the screenshot of a proper execution of `bug_grade.sh` using this line:
+When using this 'student code' implementation, it has no errors, so it is expected to pass the compile and file check, and it does, with no errors. Here is the screenshot of a proper execution of `bug_grade.sh` using this line: ![Image](https://github.com/acjeter/cse15l-lab-reports/blob/main/LR5-SS1-bug-grade.png)
 
 
-However, when using the lab files which are expected to cause a compile error, no such compile error is displayed by `bug_grade.sh` in the Terminal, and I'm not sure what's wrong with my code. Can you help me? Here is the buggy output:
+However, when using the lab files which are expected to cause a compile error, no such compile error is displayed by `bug_grade.sh` in the Terminal, and I'm not sure what's wrong with my code. Can you help me? Here is the buggy output: ![Image](https://github.com/acjeter/cse15l-lab-reports/blob/main/LR5-SS2.5-bug-grade.png)
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
