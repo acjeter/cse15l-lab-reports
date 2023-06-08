@@ -12,15 +12,20 @@ _Credit: [https://www.freecodecamp.org/news/how-i-learned-to-love-vim-ce3e058d57
 ***
 
 ### Timing Tasks!
+We will use this repository for the purposes of these tasks: [https://github.com/ucsd-cse15l-s23/lab7](https://github.com/ucsd-cse15l-s23/lab7)
+
 
 1. **Setup** Delete any existing forks of the repository I have on my account
 2. **Setup** Fork the repository
 3. **Start the Timer!**
 4. Log into `ieng6`
-5. Clone my fork of the repository from my Github account
-6. Run the tests, demonstrating that they fail
-7. Edit the code file `ListExamples.java` to fix the failing test (the error is that `index1` is used instead of `index2` in the final loop in `merge`
-8. Run the tests, demonstrating that they now succeed
-9. Commit and push the resulting change to your Github account
+  - To get to this step, you just need to type `ssh cs15lsp23__@ieng6.ucsd.edu` into the command line, and if you don't have an `ssh key` on your local system, then just enter your password as well.
+6. Clone my fork of the repository from my Github account
+7. Run the tests, demonstrating that they fail
+8. Edit the code file `ListExamples.java` to fix the failing test (the error is that `index1` is used instead of `index2` in the final loop in `merge`
+9. Run the tests, demonstrating that they now succeed
+10. Commit and push the resulting change to your Github account
 
 After you've completed steps 1-3 on your own, follow along with me as I guide us through the rest! 
+
+
