@@ -20,15 +20,27 @@ We will use this repository for the purposes of these tasks: [https://github.com
 3. **Start the Timer!**
 4. Log into `ieng6`
   - To get to this step, you just need to type `ssh cs15lsp23__@ieng6.ucsd.edu` into the command line, and if you don't have an `ssh key` on your local system, then just enter your password as well.
-6. Clone my fork of the repository from my Github account
+5. Clone my fork of the repository from my Github account
   - To clone the fork, use `git clone https://github.com/acjeter/lab7`
-8. Run the tests, demonstrating that they fail
+6. Run the tests, demonstrating that they fail
   - To run the tests, you must first make sure that you change the working directory by using `cd` to `lab7/` or wherever you put the cloned lab7.
   - After that, input `bash test.sh` to test the file, the output should show that `ListExamples.java` did not pass one of the JUnit testers.
-10. Edit the code file `ListExamples.java` to fix the failing test (the error is that `index1` is used instead of `index2` in the final loop in `merge`
-  - Now, to fix the code, we're going to enter `vim`. `Vim` allows us to make command-line edits to a file, and in this case, since there is a bug with `ListExamples.java`, we will need to enter `vim ListExamples.java` into the command-line. The screen that follows is the `vim` view of `ListExamples.java`! How cool! Now, while you might think that vim is able to be navigated by clicking with the curser and making edits just like Visual Studio Code, unfortunately that is not the case. With vim, you will need to use the `<H>` key to move right, `<J>` key to move down, `<K>` key to move up, and `<L>` key to move left. To make edits, you need to press `<i>` to enter insert mode. Alternatively, you can press `<R>` to replace one character, by typing the character you want to replace it with after. To exit insert mode, you simply need to press the `<esc>` key. Additionally, 
-12. Run the tests, demonstrating that they now succeed
-13. Commit and push the resulting change to your Github account
+7. Edit the code file `ListExamples.java` to fix the failing test (the error is that `index1` is used instead of `index2` in the final loop in `merge`
+  - Now, to fix the code, we're going to enter `vim`. `Vim` allows us to make command-line edits to a file, and in this case, since there is a bug with `ListExamples.java`, we will need to enter `vim ListExamples.java` into the command-line. 
+  - The screen that follows is the `vim` view of `ListExamples.java`! How cool! Now, while you might think that vim is able to be navigated by clicking with the curser and making edits just like Visual Studio Code, unfortunately that is not the case. 
+  - With vim, you will need to use the `<H>` key to move right, `<J>` key to move down, `<K>` key to move up, and `<L>` key to move left. 
+  - To make edits, you need to press `<i>` to enter insert mode. Alternatively, you can press `<R>` to replace one character, by typing the character you want to replace it with after. To exit `insert mode`, you simply need to press the `<esc>` key to enter `normal mode`. 
+  - To exit vim altogether *without* saving your changes, you can type `:q`. To exit AND save your changes, make sure to type `:wq`.
+  - Now, lets fix the bug. We will need to move the curser down to the line that contains the bug, which is in the second while loop. For me, I needed to press `<J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><J><L><L><L><L><L><L><L><L><L><L><L> <R><2>` and then I saved and exited vim by typing: `:wq`.
+  - Now, the second line down in the second while loop should read: `index2 += 2;`, and `ListExamples.java` should be all fixed!
+
+8. Run the tests, demonstrating that they now succeed
+  - After exiting vim, we will need to re-run the tests, by going up twice in our `bash` history. For me, I was able to re-enter `bash test.sh` quickly by typing `<up><up><enter>`. The result of the edits in vim are below:
+
+
+9. Commit and push the resulting change to your Github account
+  - Finally, to commit the changes you have made to your edited clone, you will need to type and enter `git commit`. This will begin the commit process. After you type this, you will need to input `git add <file>` for each of the files that bash is telling you need to be added. It looks like this:
+
 
 After you've completed steps 1-3 on your own, follow along with me as I guide us through the rest! 
 
