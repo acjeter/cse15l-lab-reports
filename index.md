@@ -16,7 +16,7 @@ Hello! Welcome to the main page of my CSE15L website. Below are some links to my
 **Blog Post** *In Progress*
 
 ### Lab Report 5 | Debugging Scenario
-**EdStem Post** *In Progress*
+**EdStem Post** [Lab Report 5](https://acjeter.github.io/cse15l-lab-reports/lab-report-5)
 
 ***
 
