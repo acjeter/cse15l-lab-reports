@@ -5,3 +5,22 @@ For this lab report, I will be detailing the steps to the `vim` challenge in Lab
 
 ***
 
+![Image](Fun_vim_Meme.jpeg)
+
+_Credit: [https://www.freecodecamp.org/news/how-i-learned-to-love-vim-ce3e058d57fb/](https://www.freecodecamp.org/news/how-i-learned-to-love-vim-ce3e058d57fb/)_
+
+***
+
+### Timing Tasks!
+
+1. **Setup** Delete any existing forks of the repository I have on my account
+2. **Setup** Fork the repository
+3. **Start the Timer!**
+4. Log into `ieng6`
+5. Clone my fork of the repository from my Github account
+6. Run the tests, demonstrating that they fail
+7. Edit the code file `ListExamples.java` to fix the failing test (the error is that `index1` is used instead of `index2` in the final loop in `merge`
+8. Run the tests, demonstrating that they now succeed
+9. Commit and push the resulting change to your Github account
+
+After you've completed steps 1-3 on your own, follow along with me as I guide us through the rest! 
